@@ -1,4 +1,3 @@
-import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -25,9 +24,14 @@ class Inventory:
                 self.books = None
                 return
 
-            self.books["price"] = pd.to_numeric(self.books["price"], errors="coerce")
-            self.books["quantity"] = pd.to_numeric(self.books["quantity"], errors="coerce")
-
+            required_sales_columns = ["date", "title", "quantity_sold", "total_revenue"]
+            
+            if not all(col in self.sales.columns
+                       for col in required_sales_columns):
+                       print("Invalid sales CSV columns!")
+                       self.sales = None
+                       return
+            
             if (
                 self.books["title"].isna().any()
                 or self.books["author"].isna().any()
