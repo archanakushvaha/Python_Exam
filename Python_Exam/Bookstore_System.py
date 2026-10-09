@@ -376,7 +376,7 @@ while True:
     elif choice == 7:
         book.visualization()
 
-    elif choice == 9:
+    elif choice == 8:
         print("Thank you for using Bookstore Management!")
         break
 
