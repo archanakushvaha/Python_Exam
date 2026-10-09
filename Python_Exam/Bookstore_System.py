@@ -352,7 +352,11 @@ while True:
     print("7. Visualization")
     print("8. Exit")
 
-    choice = int(input("Enter your choice: "))
+    try:
+        choice = int(input("Enter your choice: "))
+    except ValueError:
+        print("Enter a valid menu number!")
+        continue
 
     if choice == 1:
         path = input("Enter CSV file: ")
