@@ -1,106 +1,227 @@
-# 📚 Bookstore Management System
+# Bookstore Inventory Management and Sales Analysis
 
-## 📖 Project Overview
+## Project Overview
 
-The **Bookstore Management System** is a Python-based project designed to manage bookstore operations efficiently. It helps users view books, add new books, search for books, update book details, and manage book records easily.
+The Bookstore Inventory Management and Sales Analysis project is a Python-based application designed to manage bookstore inventory and analyze sales data. It allows users to add, display, search, update, and remove books. It also records sales, calculates revenue, generates reports, and visualizes sales trends using charts.
 
-This project is developed to practice Python programming concepts and understand how a bookstore management system works.
+This project uses Object-Oriented Programming (OOP), NumPy, Pandas, Matplotlib, and Seaborn to manage data and perform analysis.
 
-## 🎯 Objectives
+## Features
 
-* To maintain book records.
-* To add new books to the bookstore.
-* To search for books by title or author.
-* To update book information.
-* To delete book records.
-* To display all available books.
-* To simplify bookstore management.
+### 1. Inventory Management
 
-## 🛠️ Technologies Used
+* Load inventory data from a CSV file.
+* Add new books to the inventory.
+* Display all available books.
+* Search books by title.
+* Update book title, price, and quantity.
+* Remove books from the inventory.
+* Save inventory changes automatically to the CSV file.
 
-* **Programming Language:** Python
-* **Database:** CSV / SQLite (according to your project)
-* **Concepts:** Classes, Objects, Functions, Conditional Statements, Loops, and Exception Handling.
+### 2. Input Validation
 
-## ✨ Features
+* Validate book titles and author names.
+* Prevent empty book details.
+* Ensure book prices are positive.
+* Validate book quantities.
+* Prevent selling more books than available in stock.
+* Handle invalid inputs and missing files.
 
-1. **Add Books:** Add new books with details such as book ID, title, author, price, and quantity.
-2. **View Books:** Display all available books.
-3. **Search Books:** Find books using their title, author, or book ID.
-4. **Update Books:** Modify existing book information.
-5. **Delete Books:** Remove book records.
-6. **Inventory Management:** Track available book quantities.
-7. **Exit:** Close the application safely.
+### 3. Sales Management
 
-## 📂 Project Structure
+* Record book sales.
+* Calculate total revenue for each sale.
+* Automatically update available inventory.
+* Save sales records to a CSV file.
+
+### 4. Data Analysis Using NumPy
+
+* Calculate total book copies.
+* Calculate average book price.
+* Calculate total inventory value.
+* Calculate total copies sold.
+* Calculate total sales revenue.
+* Calculate monthly revenue growth rate.
+
+### 5. Data Management Using Pandas
+
+* Load and manage CSV files.
+* Update inventory records.
+* Analyze sales by book title.
+* Identify the best-selling book.
+* Identify the highest-revenue book.
+* Analyze monthly sales trends.
+
+### 6. Data Visualization
+
+* **Bar Chart:** Total books sold by genre.
+* **Line Chart:** Monthly sales revenue trends.
+* **Pie Chart:** Revenue share by book genre.
+* **Heatmap:** Correlation between book price and sales quantity.
+
+## Technologies Used
+
+* Python
+* Object-Oriented Programming (OOP)
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* CSV File Handling
+* Exception Handling
+* Control Structures
+
+## Project Structure
 
 ```text
-Bookstore/
+Bookstore_Project/
 │
 ├── main.py
-├── README.md
-└── books.csv
+├── inventory.csv
+├── sales.csv
+└── README.md
 ```
 
-*Note: The file structure may vary depending on your project.*
+## CSV File Structure
 
-## ⚙️ Requirements
+### inventory.csv
 
-* Python 3.x
-* Any Python-supported code editor, such as VS Code or PyCharm.
-* CSV or SQLite, depending on the database used.
+This file stores the book inventory details.
 
-## 🚀 How to Run the Project
+| Column   | Description          |
+| -------- | -------------------- |
+| title    | Name of the book     |
+| author   | Name of the author   |
+| genre    | Category of the book |
+| price    | Price of the book    |
+| quantity | Available copies     |
 
-1. Install Python on your computer.
-2. Open the project folder in VS Code or another Python editor.
-3. Make sure all required files are available.
-4. Open the terminal.
-5. Run the following command:
+Example:
+
+```csv
+title,author,genre,price,quantity
+Atomic Habits,James Clear,Self-Help,499,40
+Ikigai,Hector Garcia,Self-Help,299,35
+The Alchemist,Paulo Coelho,Fiction,250,30
+```
+
+### sales.csv
+
+This file stores book sales transactions.
+
+| Column        | Description                 |
+| ------------- | --------------------------- |
+| date          | Date of the sale            |
+| title         | Name of the book sold       |
+| quantity_sold | Number of copies sold       |
+| total_revenue | Total revenue from the sale |
+
+Example:
+
+```csv
+date,title,quantity_sold,total_revenue
+2026-01-05,Atomic Habits,5,2495
+2026-01-12,The Alchemist,4,1000
+```
+
+## Installation
+
+### Step 1: Install Python
+
+Install Python on your computer if it is not already installed.
+
+### Step 2: Install Required Libraries
+
+Open the terminal or command prompt and run:
+
+```bash
+pip install numpy pandas matplotlib seaborn
+```
+
+### Step 3: Prepare Project Files
+
+Keep `main.py`, `inventory.csv`, and `sales.csv` in the same project folder.
+
+### Step 4: Run the Project
+
+Open the terminal in the project directory and execute:
 
 ```bash
 python main.py
 ```
 
-6. Follow the menu options displayed on the screen.
+## Main Menu
 
-## 💻 Example Menu
+When the program runs, the following menu is displayed:
 
 ```text
-=================================
-     BOOKSTORE MANAGEMENT
-=================================
-1. Add Book
-2. View Books
-3. Search Book
-4. Update Book
-5. Delete Book
-6. Exit
-=================================
-Enter your choice:
+========== BOOKSTORE MANAGEMENT ==========
+
+1. Load Data
+2. Add Book
+3. Display Books
+4. Search Book
+5. Update Book
+6. Remove Book
+7. Record Sales
+8. Analysis and Report
+9. Visualization
+10. Exit
 ```
 
-## 📚 Learning Outcomes
+Enter the corresponding option number to perform an operation.
 
-* Understanding Python classes and objects.
-* Using functions and conditional statements.
-* Working with loops and user input.
-* Handling errors using exception handling.
-* Managing book records using CSV files or a database.
-* Developing problem-solving and programming skills.
+## Analysis and Reports
 
-## 🔮 Future Enhancements
+The application provides the following metrics:
 
-* Add a graphical user interface (GUI).
-* Implement book sales and billing.
-* Add customer information management.
-* Generate sales reports.
-* Integrate an online database.
+* Total number of book titles.
+* Total available book copies.
+* Average book price.
+* Total inventory value.
+* Total copies sold.
+* Total sales revenue.
+* Best-selling book.
+* Highest-revenue book.
+* Monthly revenue growth percentage.
 
-## 👩‍💻 Author
+### Inventory Value
 
-**Student Project**
+Inventory value is calculated as:
 
-## 📝 Conclusion
+```text
+Inventory Value = Price × Available Quantity
+```
 
-The Bookstore Management System provides a simple way to manage book records and bookstore inventory. This project demonstrates the practical application of Python programming concepts in a real-world scenario.
+### Sales Revenue
+
+Sales revenue is calculated as:
+
+```text
+Sales Revenue = Price × Quantity Sold
+```
+
+### Monthly Revenue Growth
+
+```text
+Growth Rate = ((Current Month Revenue - Previous Month Revenue)
+               / Previous Month Revenue) × 100
+```
+
+## Learning Outcomes
+
+Through this project, users can learn:
+
+* Python classes, objects, and methods.
+* Constructors and instance variables.
+* Conditional statements and loops.
+* Input validation and exception handling.
+* CSV file handling with Pandas.
+* Numerical calculations using NumPy.
+* Data aggregation and analysis.
+* Data visualization using Matplotlib and Seaborn.
+* Inventory and sales management concepts.
+
+## Conclusion
+
+The Bookstore Inventory Management and Sales Analysis project provides a practical way to manage bookstore inventory, record sales transactions, calculate important business metrics, and visualize sales performance. It demonstrates how Python and data analysis libraries can be combined to build a useful data-driven application.
