@@ -355,7 +355,8 @@ while True:
     choice = int(input("Enter your choice: "))
 
     if choice == 1:
-        book.load_data(path) = input("Enter CSV file: ")
+        path = input("Enter CSV file: ")
+        book.load_data(path)
 
     elif choice == 2:
         book.add_book()
