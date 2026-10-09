@@ -1,0 +1,201 @@
+Sale_ID,Date,Product,Category,Quantity,Unit_Price,Discount_Percent,Sales_Amount,Cost_Amount,Profit,Payment_Method,City,Sales_Channel
+S001,2025-04-10,Drawing Kit,Art Supplies,14,1465.29,0,20514.06,16810.22,3703.84,UPI,Ahmedabad,Store
+S002,2025-11-22,Calculator,Electronics,12,2307.01,0,27684.12,17752.2,9931.92,Cash,Surat,Store
+S003,2025-02-13,File Folder,Stationery,12,2116.13,20,20314.85,15171.96,5142.89,Credit Card,Vadodara,Online
+S004,2025-01-18,Calculator,Electronics,2,1364.37,5,2592.3,1941.34,650.96,UPI,Pune,Online
+S005,2025-03-20,Pencil Set,Stationery,5,260.32,20,1041.28,899.25,142.03,Debit Card,Mumbai,Online
+S006,2025-09-11,Geometry Box,Stationery,12,699.2,0,8390.4,4446.48,3943.92,UPI,Vadodara,Online
+S007,2025-05-13,File Folder,Stationery,4,1682.55,0,6730.2,4389.88,2340.32,Net Banking,Rajkot,Store
+S008,2025-11-29,Pencil Set,Stationery,11,358.83,5,3749.77,2786.85,962.92,UPI,Delhi,Store
+S009,2025-05-09,Calculator,Electronics,7,185.0,5,1230.25,992.11,238.14,UPI,Delhi,Online
+S010,2025-12-26,Wireless Mouse,Electronics,15,940.87,0,14113.05,10990.2,3122.85,Credit Card,Jaipur,Online
+S011,2025-07-12,Pencil Set,Stationery,1,222.1,5,210.99,161.61,49.38,Net Banking,Jaipur,Online
+S012,2025-03-16,Drawing Kit,Art Supplies,14,567.58,5,7548.81,4918.76,2630.05,Credit Card,Ahmedabad,Store
+S013,2025-07-24,Headphones,Electronics,15,1367.17,20,16406.04,14491.35,1914.69,Debit Card,Mumbai,Online
+S014,2025-01-05,Sticky Notes,Stationery,7,1700.75,5,11309.99,7166.32,4143.67,Debit Card,Surat,Online
+S015,2025-09-29,Sticky Notes,Stationery,13,188.92,0,2455.96,1892.15,563.81,Net Banking,Rajkot,Online
+S016,2025-01-27,Water Bottle,Accessories,3,2066.78,0,6200.34,4735.98,1464.36,UPI,Surat,Online
+S017,2025-04-04,Ball Pen,Stationery,3,2270.08,5,6469.73,3631.41,2838.32,Cash,Vadodara,Store
+S018,2025-05-11,Whiteboard Marker,Stationery,13,1316.01,15,14541.91,12408.63,2133.28,Debit Card,Jaipur,Online
+S019,2025-06-24,Color Pencils,Art Supplies,15,2474.59,20,29695.08,28450.5,1244.58,Cash,Rajkot,Store
+S020,2025-04-29,Desk Lamp,Electronics,3,1113.42,5,3173.25,1971.69,1201.56,Net Banking,Vadodara,Store
+S021,2025-05-02,School Bag,Accessories,5,2461.23,20,9844.92,8548.85,1296.07,Credit Card,Jaipur,Store
+S022,2025-09-01,USB Drive,Electronics,4,953.82,15,3242.99,2596.0,646.99,Net Banking,Pune,Online
+S023,2025-04-08,Water Bottle,Accessories,14,134.87,0,1888.18,1046.08,842.1,UPI,Surat,Store
+S024,2025-05-03,Headphones,Electronics,5,1199.82,15,5099.23,4436.2,663.03,Credit Card,Mumbai,Store
+S025,2025-11-20,Calculator,Electronics,8,1388.27,0,11106.16,6413.76,4692.4,Net Banking,Mumbai,Store
+S026,2025-02-08,Dictionary,Books,14,586.7,15,6981.73,5139.12,1842.61,Cash,Pune,Online
+S027,2025-05-02,Sticky Notes,Stationery,6,2403.01,10,12976.25,9812.82,3163.43,Cash,Ahmedabad,Store
+S028,2025-10-05,Lunch Box,Accessories,1,2418.86,5,2297.92,1699.88,598.04,Cash,Pune,Store
+S029,2025-09-24,Whiteboard Marker,Stationery,4,905.96,0,3623.84,2560.2,1063.64,UPI,Mumbai,Online
+S030,2025-03-25,Desk Lamp,Electronics,5,1308.38,10,5887.71,3872.9,2014.81,Credit Card,Vadodara,Online
+S031,2025-01-03,Whiteboard Marker,Stationery,1,2231.08,0,2231.08,1287.96,943.12,UPI,Jaipur,Online
+S032,2025-06-29,Water Bottle,Accessories,15,1352.46,0,20286.9,15608.25,4678.65,Cash,Ahmedabad,Online
+S033,2025-04-14,Desk Lamp,Electronics,11,1518.78,0,16706.58,13493.26,3213.32,Credit Card,Vadodara,Online
+S034,2025-10-14,Wireless Mouse,Electronics,13,651.4,10,7621.38,6887.14,734.24,Cash,Jaipur,Online
+S035,2025-05-06,Calculator,Electronics,4,1185.82,20,3794.62,3572.48,222.14,UPI,Surat,Online
+S036,2025-11-13,Water Bottle,Accessories,9,200.38,15,1532.91,1207.08,325.83,UPI,Jaipur,Online
+S037,2025-09-01,Printer Paper,Stationery,4,445.41,5,1692.56,1234.4,458.16,Net Banking,Surat,Store
+S038,2025-11-26,Desk Lamp,Electronics,6,1646.8,10,8892.72,7966.26,926.46,Cash,Rajkot,Online
+S039,2025-04-27,Whiteboard Marker,Stationery,5,2388.88,20,9555.52,6740.7,2814.82,UPI,Mumbai,Online
+S040,2025-09-24,Water Bottle,Accessories,9,1419.64,15,10860.25,7337.43,3522.82,Cash,Mumbai,Store
+S041,2025-03-14,Notebook,Stationery,3,911.15,15,2323.43,2062.98,260.45,Net Banking,Surat,Online
+S042,2025-05-13,Desk Lamp,Electronics,7,1342.13,5,8925.16,6725.6,2199.56,Cash,Rajkot,Store
+S043,2025-02-19,Color Pencils,Art Supplies,13,769.54,15,8503.42,6037.98,2465.44,UPI,Delhi,Store
+S044,2025-02-18,Desk Lamp,Electronics,10,1983.81,0,19838.1,14676.8,5161.3,Net Banking,Mumbai,Online
+S045,2025-11-04,Color Pencils,Art Supplies,9,1186.41,0,10677.69,6304.86,4372.83,Net Banking,Delhi,Online
+S046,2025-02-18,Drawing Kit,Art Supplies,15,413.46,0,6201.9,5038.2,1163.7,Debit Card,Surat,Store
+S047,2025-08-15,Notebook,Stationery,10,1970.7,20,15765.6,15445.5,320.1,Cash,Mumbai,Store
+S048,2025-03-04,Desk Lamp,Electronics,10,731.48,10,6583.32,4056.4,2526.92,Net Banking,Mumbai,Store
+S049,2025-11-25,Dictionary,Books,12,1295.44,5,14768.02,11155.68,3612.34,Net Banking,Pune,Online
+S050,2025-03-15,Water Bottle,Accessories,11,2445.21,0,26897.31,21762.73,5134.58,UPI,Delhi,Online
+S051,2025-07-25,Color Pencils,Art Supplies,15,2164.16,0,32462.4,20656.2,11806.2,Cash,Mumbai,Online
+S052,2025-08-25,USB Drive,Electronics,7,309.78,5,2060.04,1174.81,885.23,Credit Card,Vadodara,Store
+S053,2025-12-12,USB Drive,Electronics,12,445.51,5,5078.81,3775.44,1303.37,UPI,Ahmedabad,Store
+S054,2025-05-05,Wireless Mouse,Electronics,4,1812.01,15,6160.83,4943.76,1217.07,Debit Card,Rajkot,Online
+S055,2025-07-26,Calculator,Electronics,11,1466.59,15,13712.62,12594.23,1118.39,Cash,Surat,Online
+S056,2025-04-18,Water Bottle,Accessories,3,487.55,10,1316.39,1125.15,191.24,Credit Card,Ahmedabad,Online
+S057,2025-03-09,Dictionary,Books,8,2429.81,5,18466.56,10225.68,8240.88,Credit Card,Surat,Online
+S058,2025-06-10,Sticky Notes,Stationery,9,1089.39,20,7843.61,7259.67,583.94,UPI,Vadodara,Online
+S059,2025-03-23,Ball Pen,Stationery,7,196.17,10,1235.87,873.25,362.62,UPI,Surat,Online
+S060,2025-02-03,Headphones,Electronics,15,461.08,20,5532.96,3801.75,1731.21,UPI,Mumbai,Store
+S061,2025-04-29,USB Drive,Electronics,2,1224.73,0,2449.46,1927.88,521.58,Debit Card,Vadodara,Online
+S062,2025-03-18,Color Pencils,Art Supplies,5,932.67,0,4663.35,2504.55,2158.8,Credit Card,Mumbai,Store
+S063,2025-07-10,Sticky Notes,Stationery,8,1677.06,20,10733.18,7205.92,3527.26,Credit Card,Surat,Online
+S064,2025-11-07,Desk Lamp,Electronics,5,795.21,10,3578.45,3190.8,387.65,Debit Card,Delhi,Store
+S065,2025-08-28,Calculator,Electronics,14,45.69,20,511.73,373.1,138.63,UPI,Rajkot,Store
+S066,2025-01-11,Wireless Mouse,Electronics,10,1994.76,0,19947.6,11016.8,8930.8,Debit Card,Ahmedabad,Online
+S067,2025-11-18,Printer Paper,Stationery,1,491.98,0,491.98,247.85,244.13,Cash,Surat,Store
+S068,2025-08-02,Drawing Kit,Art Supplies,6,1908.38,0,11450.28,7081.2,4369.08,Cash,Ahmedabad,Store
+S069,2025-06-16,Color Pencils,Art Supplies,1,153.21,5,145.55,105.67,39.88,Net Banking,Vadodara,Store
+S070,2025-05-24,Desk Lamp,Electronics,7,491.92,0,3443.44,1946.14,1497.3,Debit Card,Mumbai,Store
+S071,2025-11-05,Drawing Kit,Art Supplies,11,604.23,15,5649.55,4281.31,1368.24,Debit Card,Jaipur,Online
+S072,2025-12-03,Water Bottle,Accessories,6,2353.15,10,12707.01,10642.44,2064.57,Net Banking,Vadodara,Online
+S073,2025-11-10,Desk Lamp,Electronics,3,994.41,15,2535.75,1605.54,930.21,Net Banking,Mumbai,Online
+S074,2025-03-16,Pencil Set,Stationery,11,1916.4,10,18972.36,12805.43,6166.93,Debit Card,Ahmedabad,Online
+S075,2025-11-15,Pencil Set,Stationery,11,820.87,10,8126.61,6809.11,1317.5,Debit Card,Jaipur,Store
+S076,2025-07-11,Dictionary,Books,2,1049.17,15,1783.59,1244.94,538.65,Cash,Mumbai,Store
+S077,2025-02-04,Ball Pen,Stationery,10,2103.68,10,18933.12,13284.8,5648.32,UPI,Mumbai,Online
+S078,2025-01-22,Dictionary,Books,10,1530.4,0,15304.0,8440.1,6863.9,Credit Card,Ahmedabad,Online
+S079,2025-01-20,Geometry Box,Stationery,5,1809.82,10,8144.19,6352.9,1791.29,Net Banking,Pune,Store
+S080,2025-12-15,Desk Lamp,Electronics,9,661.66,20,4763.95,4790.07,-26.12,UPI,Jaipur,Online
+S081,2025-04-12,Headphones,Electronics,14,2268.84,20,25411.01,24554.46,856.55,UPI,Mumbai,Online
+S082,2025-08-11,Printer Paper,Stationery,9,1454.8,15,11129.22,9699.48,1429.74,UPI,Pune,Online
+S083,2025-07-20,Water Bottle,Accessories,2,292.83,15,497.81,315.76,182.05,Net Banking,Mumbai,Store
+S084,2025-05-16,Wireless Mouse,Electronics,3,2166.26,0,6498.78,4714.14,1784.64,Net Banking,Vadodara,Store
+S085,2025-11-19,Water Bottle,Accessories,14,1007.56,5,13400.55,9765.56,3634.99,Debit Card,Ahmedabad,Online
+S086,2025-02-10,Sticky Notes,Stationery,15,1743.37,15,22227.97,16826.7,5401.27,Net Banking,Mumbai,Store
+S087,2025-07-17,File Folder,Stationery,11,298.64,0,3285.04,1949.97,1335.07,Credit Card,Pune,Online
+S088,2025-03-16,Printer Paper,Stationery,1,757.93,0,757.93,409.74,348.19,Debit Card,Surat,Store
+S089,2025-03-15,Desk Lamp,Electronics,14,2490.32,5,33121.26,22361.5,10759.76,Debit Card,Surat,Store
+S090,2025-11-15,Sticky Notes,Stationery,8,1507.09,20,9645.38,9011.52,633.86,Debit Card,Pune,Store
+S091,2025-07-19,Pencil Set,Stationery,7,139.7,0,977.9,602.28,375.62,Debit Card,Vadodara,Online
+S092,2025-02-24,Water Bottle,Accessories,11,1865.81,0,20523.91,15798.31,4725.6,Debit Card,Pune,Online
+S093,2025-05-31,Headphones,Electronics,13,329.74,0,4286.62,3512.6,774.02,UPI,Surat,Online
+S094,2025-12-30,Color Pencils,Art Supplies,12,1647.26,5,18778.76,13937.52,4841.24,Net Banking,Surat,Store
+S095,2025-06-07,File Folder,Stationery,12,2103.19,20,20190.62,16318.2,3872.42,Net Banking,Vadodara,Store
+S096,2025-05-13,Notebook,Stationery,15,949.84,15,12110.46,10160.1,1950.36,Credit Card,Mumbai,Online
+S097,2025-09-07,Calculator,Electronics,2,2118.31,15,3601.13,3332.14,268.99,UPI,Delhi,Online
+S098,2025-02-02,Color Pencils,Art Supplies,2,1231.29,15,2093.19,1261.08,832.11,Credit Card,Mumbai,Online
+S099,2025-04-23,File Folder,Stationery,11,658.47,20,5794.54,4460.5,1334.04,UPI,Mumbai,Online
+S100,2025-04-15,Lunch Box,Accessories,7,611.7,10,3853.71,2739.45,1114.26,Cash,Vadodara,Online
+S101,2025-07-25,File Folder,Stationery,3,1966.54,20,4719.7,4525.02,194.68,Credit Card,Mumbai,Online
+S102,2025-06-22,Drawing Kit,Art Supplies,9,2134.43,0,19209.87,15439.23,3770.64,Net Banking,Ahmedabad,Store
+S103,2025-09-06,Story Book,Books,14,2326.45,0,32570.3,16756.46,15813.84,Credit Card,Pune,Online
+S104,2025-02-08,Pencil Set,Stationery,4,2119.9,5,8055.62,4873.36,3182.26,Debit Card,Jaipur,Store
+S105,2025-08-24,Wireless Mouse,Electronics,1,1174.98,0,1174.98,767.09,407.89,Credit Card,Ahmedabad,Store
+S106,2025-09-11,Desk Lamp,Electronics,12,763.03,20,7325.09,5686.2,1638.89,Credit Card,Ahmedabad,Store
+S107,2025-04-24,USB Drive,Electronics,1,1395.61,5,1325.83,807.01,518.82,Net Banking,Jaipur,Store
+S108,2025-09-20,File Folder,Stationery,13,65.34,15,722.01,521.69,200.32,UPI,Delhi,Online
+S109,2025-03-15,Sticky Notes,Stationery,2,703.19,5,1336.06,959.14,376.92,Debit Card,Jaipur,Online
+S110,2025-09-16,Story Book,Books,6,2417.77,15,12330.63,7507.08,4823.55,Credit Card,Delhi,Store
+S111,2025-11-28,Lunch Box,Accessories,10,1314.7,5,12489.65,9754.6,2735.05,Debit Card,Delhi,Online
+S112,2025-03-02,Pencil Set,Stationery,2,2062.45,5,3918.65,3369.06,549.59,Cash,Vadodara,Online
+S113,2025-03-28,Notebook,Stationery,9,929.76,5,7949.45,4782.24,3167.21,Debit Card,Vadodara,Online
+S114,2025-04-23,Whiteboard Marker,Stationery,8,1212.91,5,9218.12,5388.24,3829.88,Credit Card,Surat,Online
+S115,2025-10-21,Color Pencils,Art Supplies,9,703.51,10,5698.43,3207.51,2490.92,Net Banking,Surat,Store
+S116,2025-01-15,Lunch Box,Accessories,10,2287.12,5,21727.64,18221.4,3506.24,Credit Card,Pune,Online
+S117,2025-10-16,Story Book,Books,8,1723.49,0,13787.92,8012.8,5775.12,UPI,Jaipur,Store
+S118,2025-05-10,School Bag,Accessories,7,1213.86,20,6797.62,6387.99,409.63,Credit Card,Mumbai,Online
+S119,2025-12-25,USB Drive,Electronics,15,146.96,10,1983.96,1766.55,217.41,Cash,Surat,Store
+S120,2025-11-11,Drawing Kit,Art Supplies,11,1119.45,0,12313.95,6359.76,5954.19,UPI,Jaipur,Store
+S121,2025-04-03,USB Drive,Electronics,7,86.04,0,602.28,363.65,238.63,Credit Card,Jaipur,Online
+S122,2025-05-30,Drawing Kit,Art Supplies,2,900.65,0,1801.3,1284.6,516.7,Net Banking,Surat,Store
+S123,2025-06-01,Headphones,Electronics,4,2211.55,5,8403.89,5963.24,2440.65,Credit Card,Surat,Store
+S124,2025-01-25,School Bag,Accessories,5,2418.84,0,12094.2,7876.7,4217.5,UPI,Delhi,Online
+S125,2025-05-30,Geometry Box,Stationery,3,1105.13,10,2983.85,1987.11,996.74,Net Banking,Pune,Online
+S126,2025-11-05,Lunch Box,Accessories,7,921.62,0,6451.34,4035.78,2415.56,Credit Card,Surat,Online
+S127,2025-09-21,Desk Lamp,Electronics,14,2166.88,5,28819.5,20160.14,8659.36,Net Banking,Rajkot,Online
+S128,2025-03-27,Color Pencils,Art Supplies,2,1492.57,0,2985.14,1594.72,1390.42,Cash,Surat,Online
+S129,2025-06-26,Sticky Notes,Stationery,14,1977.67,5,26303.01,14609.98,11693.03,Net Banking,Jaipur,Online
+S130,2025-02-16,Wireless Mouse,Electronics,12,1404.82,10,15172.06,12160.68,3011.38,UPI,Jaipur,Online
+S131,2025-03-05,Whiteboard Marker,Stationery,12,1523.34,15,15538.07,13614.72,1923.35,Credit Card,Delhi,Store
+S132,2025-02-11,Dictionary,Books,5,2436.48,15,10355.04,8323.7,2031.34,Net Banking,Ahmedabad,Store
+S133,2025-11-25,Water Bottle,Accessories,8,96.94,10,697.97,492.24,205.73,Cash,Jaipur,Store
+S134,2025-03-06,Dictionary,Books,11,1804.23,5,18854.2,12483.35,6370.85,Cash,Mumbai,Store
+S135,2025-03-16,Calculator,Electronics,14,504.29,0,7060.06,5417.58,1642.48,Credit Card,Jaipur,Online
+S136,2025-10-29,Water Bottle,Accessories,12,983.96,0,11807.52,8076.48,3731.04,Cash,Mumbai,Store
+S137,2025-08-30,Lunch Box,Accessories,12,329.61,0,3955.32,3130.8,824.52,UPI,Pune,Online
+S138,2025-05-20,Water Bottle,Accessories,5,925.84,20,3703.36,3521.4,181.96,Credit Card,Mumbai,Store
+S139,2025-05-29,Color Pencils,Art Supplies,15,2489.77,0,37346.55,20182.8,17163.75,Debit Card,Surat,Online
+S140,2025-10-26,Pencil Set,Stationery,5,71.5,0,357.5,195.15,162.35,UPI,Vadodara,Store
+S141,2025-07-29,Color Pencils,Art Supplies,11,2138.6,10,21172.14,12351.79,8820.35,Cash,Vadodara,Online
+S142,2025-11-20,Sticky Notes,Stationery,6,452.11,0,2712.66,1736.82,975.84,Cash,Vadodara,Online
+S143,2025-10-09,Notebook,Stationery,2,1686.91,0,3373.82,2583.36,790.46,Net Banking,Pune,Store
+S144,2025-10-23,Ball Pen,Stationery,7,1845.29,0,12917.03,9372.51,3544.52,Debit Card,Delhi,Store
+S145,2025-08-08,Story Book,Books,15,2298.38,15,29304.35,26299.35,3005.0,Credit Card,Jaipur,Online
+S146,2025-09-27,Ball Pen,Stationery,12,329.83,0,3957.96,2619.84,1338.12,Credit Card,Delhi,Online
+S147,2025-04-23,Story Book,Books,12,1230.98,0,14771.76,9176.4,5595.36,Net Banking,Surat,Store
+S148,2025-09-24,Lunch Box,Accessories,6,1642.91,0,9857.46,7110.6,2746.86,Net Banking,Surat,Store
+S149,2025-02-13,Headphones,Electronics,9,82.92,10,671.65,535.41,136.24,UPI,Delhi,Store
+S150,2025-01-24,Pencil Set,Stationery,5,1516.78,20,6067.12,4387.8,1679.32,Debit Card,Vadodara,Online
+S151,2025-03-23,Wireless Mouse,Electronics,13,599.18,0,7789.34,3906.37,3882.97,Debit Card,Delhi,Online
+S152,2025-04-04,Headphones,Electronics,2,1587.03,0,3174.06,1942.68,1231.38,UPI,Surat,Store
+S153,2025-03-31,Color Pencils,Art Supplies,2,1431.51,15,2433.57,2162.76,270.81,Cash,Jaipur,Online
+S154,2025-09-16,Dictionary,Books,14,303.94,0,4255.16,3445.54,809.62,UPI,Vadodara,Store
+S155,2025-10-17,Pencil Set,Stationery,10,1749.4,20,13995.2,13738.0,257.2,Cash,Delhi,Online
+S156,2025-07-18,Headphones,Electronics,5,193.33,0,966.65,740.6,226.05,Cash,Ahmedabad,Online
+S157,2025-10-10,Whiteboard Marker,Stationery,1,2292.11,0,2292.11,1225.22,1066.89,Net Banking,Jaipur,Store
+S158,2025-06-26,Lunch Box,Accessories,15,2493.72,20,29924.64,29235.45,689.19,Credit Card,Mumbai,Online
+S159,2025-01-13,Drawing Kit,Art Supplies,8,2191.52,10,15778.94,10010.8,5768.14,Cash,Surat,Online
+S160,2025-09-26,Sticky Notes,Stationery,14,1455.56,15,17321.16,10202.08,7119.08,Net Banking,Rajkot,Store
+S161,2025-12-22,File Folder,Stationery,2,1244.77,0,2489.54,1724.42,765.12,Net Banking,Pune,Online
+S162,2025-12-06,Notebook,Stationery,1,208.21,15,176.98,131.56,45.42,Cash,Jaipur,Online
+S163,2025-07-06,Dictionary,Books,12,1073.35,5,12236.19,7454.04,4782.15,Cash,Pune,Store
+S164,2025-04-12,File Folder,Stationery,8,1856.39,5,14108.56,10324.56,3784.0,Net Banking,Vadodara,Store
+S165,2025-11-24,Wireless Mouse,Electronics,4,1501.57,5,5705.97,4540.96,1165.01,Cash,Ahmedabad,Online
+S166,2025-09-08,Printer Paper,Stationery,1,987.04,5,937.69,607.35,330.34,Net Banking,Jaipur,Online
+S167,2025-08-08,Geometry Box,Stationery,5,401.35,5,1906.41,1188.65,717.76,Credit Card,Mumbai,Online
+S168,2025-04-29,Ball Pen,Stationery,10,2130.38,20,17043.04,14344.8,2698.24,UPI,Mumbai,Store
+S169,2025-10-03,Water Bottle,Accessories,12,1154.02,0,13848.24,9321.72,4526.52,UPI,Jaipur,Online
+S170,2025-08-17,School Bag,Accessories,6,144.4,15,736.44,490.56,245.88,UPI,Jaipur,Online
+S171,2025-12-15,Sticky Notes,Stationery,8,841.88,15,5724.78,5451.6,273.18,UPI,Delhi,Store
+S172,2025-04-12,Calculator,Electronics,12,705.41,0,8464.92,4914.12,3550.8,Credit Card,Pune,Store
+S173,2025-06-23,Pencil Set,Stationery,14,2275.86,0,31862.04,18209.8,13652.24,UPI,Jaipur,Store
+S174,2025-06-15,Ball Pen,Stationery,7,1194.28,20,6687.97,5510.26,1177.71,Credit Card,Jaipur,Store
+S175,2025-03-18,Geometry Box,Stationery,14,1856.81,15,22096.04,19726.0,2370.04,Debit Card,Ahmedabad,Online
+S176,2025-08-04,School Bag,Accessories,6,1244.61,10,6720.89,4407.3,2313.59,UPI,Mumbai,Online
+S177,2025-11-04,Printer Paper,Stationery,2,308.23,15,523.99,457.04,66.95,Credit Card,Surat,Online
+S178,2025-08-24,Whiteboard Marker,Stationery,12,171.95,0,2063.4,1068.48,994.92,Net Banking,Surat,Store
+S179,2025-05-29,Pencil Set,Stationery,9,1392.97,20,10029.38,9082.71,946.67,UPI,Delhi,Store
+S180,2025-10-15,Whiteboard Marker,Stationery,11,1123.24,0,12355.64,9245.83,3109.81,Debit Card,Jaipur,Online
+S181,2025-12-22,Ball Pen,Stationery,4,654.69,20,2095.01,1783.2,311.81,Cash,Delhi,Store
+S182,2025-07-18,Sticky Notes,Stationery,6,95.7,10,516.78,394.26,122.52,UPI,Jaipur,Store
+S183,2025-05-08,Wireless Mouse,Electronics,7,1734.76,10,10928.99,8790.95,2138.04,Credit Card,Jaipur,Online
+S184,2025-05-28,Desk Lamp,Electronics,2,1739.3,15,2956.81,2315.2,641.61,Net Banking,Surat,Store
+S185,2025-03-31,Notebook,Stationery,2,1777.19,15,3021.22,1963.44,1057.78,Net Banking,Mumbai,Store
+S186,2025-07-06,Color Pencils,Art Supplies,14,696.86,20,7804.83,6521.76,1283.07,Cash,Surat,Online
+S187,2025-05-30,Whiteboard Marker,Stationery,2,1604.62,0,3209.24,1938.16,1271.08,Cash,Delhi,Online
+S188,2025-06-14,Geometry Box,Stationery,10,359.96,10,3239.64,2333.1,906.54,Credit Card,Ahmedabad,Online
+S189,2025-05-11,Story Book,Books,9,1792.95,10,14522.9,10159.38,4363.52,Credit Card,Delhi,Store
+S190,2025-09-19,Color Pencils,Art Supplies,3,285.73,10,771.47,616.86,154.61,Credit Card,Pune,Online
+S191,2025-07-13,File Folder,Stationery,7,866.42,20,4851.95,3221.19,1630.76,Credit Card,Rajkot,Store
+S192,2025-12-13,Desk Lamp,Electronics,9,2476.3,15,18943.69,13642.47,5301.22,Cash,Vadodara,Store
+S193,2025-09-22,File Folder,Stationery,12,227.84,5,2597.38,2155.08,442.3,Credit Card,Pune,Store
+S194,2025-03-07,Geometry Box,Stationery,9,1158.08,10,9380.45,6478.38,2902.07,Net Banking,Rajkot,Online
+S195,2025-03-29,Color Pencils,Art Supplies,6,2201.19,5,12546.78,10311.0,2235.78,Net Banking,Surat,Store
+S196,2025-10-22,Notebook,Stationery,8,1360.91,20,8709.82,7954.8,755.02,Credit Card,Rajkot,Online
+S197,2025-12-08,Wireless Mouse,Electronics,2,2330.17,5,4427.32,3350.58,1076.74,UPI,Surat,Store
+S198,2025-01-21,Desk Lamp,Electronics,6,1451.97,5,8276.23,6254.04,2022.19,Debit Card,Delhi,Store
+S199,2025-10-01,Geometry Box,Stationery,5,2140.94,0,10704.7,7036.35,3668.35,Net Banking,Delhi,Store
+S200,2025-12-11,Printer Paper,Stationery,1,1992.89,0,1992.89,1017.78,975.11,Cash,Jaipur,Store

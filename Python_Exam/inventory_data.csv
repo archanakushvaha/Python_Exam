@@ -1,0 +1,201 @@
+Item_ID,Item_Name,Category,Supplier,Unit_Cost,Selling_Price,Stock_Quantity,Reorder_Level,Units_Sold,Warehouse,Last_Restock_Date,Status
+I001,Wireless Mouse,Electronics,Tech Supplier A,5648.2,8812.99,195,35,18,Warehouse A,2026-02-27,In Stock
+I002,Storage Box,Storage,General Supplier A,2800.83,4870.72,193,18,18,Warehouse A,2026-02-01,In Stock
+I003,Laptop Stand,Accessories,Office Supplier A,2793.25,3903.68,187,38,67,Warehouse C,2026-02-17,In Stock
+I004,Monitor,Electronics,Tech Supplier A,268.89,341.25,240,35,43,Warehouse B,2026-07-20,In Stock
+I005,Bookshelf,Furniture,Furniture Supplier A,7172.36,9181.74,63,23,92,Warehouse C,2026-10-08,In Stock
+I006,Keyboard,Electronics,Tech Supplier B,11446.07,14088.33,214,21,45,Warehouse A,2026-07-12,In Stock
+I007,Wireless Mouse,Electronics,Tech Supplier A,1056.2,1727.23,135,38,83,Warehouse A,2026-08-10,In Stock
+I008,Bookshelf,Furniture,Furniture Supplier A,2345.9,2756.08,164,24,61,Warehouse B,2026-05-31,In Stock
+I009,Desk,Furniture,Furniture Supplier B,6873.48,11931.39,123,30,27,Warehouse A,2026-06-06,In Stock
+I010,Notebook,Stationery,Paper Supplier A,6729.64,8930.56,239,44,86,Warehouse A,2026-04-09,In Stock
+I011,Wireless Mouse,Electronics,Tech Supplier A,11054.18,19059.77,153,33,89,Warehouse C,2026-07-24,In Stock
+I012,Office Chair,Furniture,Furniture Supplier A,10923.37,15542.64,166,22,14,Warehouse B,2026-08-16,In Stock
+I013,Water Bottle,Accessories,General Supplier A,9472.25,11454.98,143,17,34,Warehouse C,2026-03-03,In Stock
+I014,Ball Pen Pack,Stationery,Paper Supplier B,2433.25,2882.85,41,19,60,Warehouse C,2026-09-20,In Stock
+I015,File Folder,Stationery,Paper Supplier C,10327.99,15537.54,156,41,81,Warehouse A,2026-09-06,In Stock
+I016,Laptop Stand,Accessories,Office Supplier A,9572.67,11149.76,155,41,98,Warehouse B,2026-08-29,In Stock
+I017,Bookshelf,Furniture,Furniture Supplier A,2868.34,3784.81,24,34,74,Warehouse A,2026-01-24,Low Stock
+I018,Laptop Stand,Accessories,Office Supplier A,1520.11,2590.3,221,49,6,Warehouse A,2026-04-09,In Stock
+I019,Office Chair,Furniture,Furniture Supplier A,8279.49,12973.64,141,39,71,Warehouse C,2026-09-15,In Stock
+I020,Water Bottle,Accessories,General Supplier A,2742.6,3661.61,49,49,59,Warehouse B,2026-06-16,Low Stock
+I021,Laptop Stand,Accessories,Office Supplier A,4474.6,5660.05,133,32,95,Warehouse B,2026-07-14,In Stock
+I022,Stapler,Stationery,Paper Supplier B,9276.97,13033.44,10,17,93,Warehouse A,2026-05-06,Low Stock
+I023,Water Bottle,Accessories,General Supplier A,10592.63,14132.45,52,37,91,Warehouse C,2026-05-05,In Stock
+I024,File Folder,Stationery,Paper Supplier C,8827.95,12653.65,211,12,4,Warehouse B,2026-05-13,In Stock
+I025,Storage Box,Storage,General Supplier A,2445.84,3401.6,208,33,26,Warehouse B,2026-07-16,In Stock
+I026,Ball Pen Pack,Stationery,Paper Supplier B,2898.99,4547.71,82,32,38,Warehouse B,2026-02-27,In Stock
+I027,Ball Pen Pack,Stationery,Paper Supplier B,814.89,1171.58,63,49,88,Warehouse B,2026-08-20,In Stock
+I028,File Folder,Stationery,Paper Supplier C,7907.52,11382.76,106,12,8,Warehouse B,2026-08-31,In Stock
+I029,Wireless Mouse,Electronics,Tech Supplier A,11775.17,18894.06,70,34,34,Warehouse B,2026-05-06,In Stock
+I030,Stapler,Stationery,Paper Supplier B,3706.9,5608.97,228,24,30,Warehouse C,2026-10-04,In Stock
+I031,Desk,Furniture,Furniture Supplier B,10202.13,12880.71,171,46,90,Warehouse B,2026-10-05,In Stock
+I032,Whiteboard Marker,Stationery,Paper Supplier C,11294.7,19356.4,172,40,66,Warehouse B,2026-06-08,In Stock
+I033,Water Bottle,Accessories,General Supplier A,4791.06,7715.51,54,45,28,Warehouse A,2026-05-05,In Stock
+I034,Printer Paper,Stationery,Paper Supplier A,601.39,1020.85,244,36,87,Warehouse B,2026-02-25,In Stock
+I035,Storage Box,Storage,General Supplier A,763.63,1335.53,63,41,97,Warehouse A,2026-01-25,In Stock
+I036,Office Chair,Furniture,Furniture Supplier A,3768.71,5551.68,11,36,28,Warehouse B,2026-10-07,Low Stock
+I037,Laptop Stand,Accessories,Office Supplier A,942.94,1238.13,126,40,56,Warehouse B,2026-01-02,In Stock
+I038,Desk,Furniture,Furniture Supplier B,2840.9,3364.0,22,39,45,Warehouse C,2026-07-20,Low Stock
+I039,Desk,Furniture,Furniture Supplier B,7437.8,12768.27,51,36,28,Warehouse C,2026-08-17,In Stock
+I040,Keyboard,Electronics,Tech Supplier B,10597.46,14739.86,105,38,96,Warehouse C,2026-09-22,In Stock
+I041,Desk,Furniture,Furniture Supplier B,5151.82,6205.63,142,26,100,Warehouse A,2026-03-12,In Stock
+I042,Stapler,Stationery,Paper Supplier B,3697.94,5683.05,181,22,16,Warehouse B,2026-04-28,In Stock
+I043,File Folder,Stationery,Paper Supplier C,4108.55,5496.93,245,36,99,Warehouse B,2026-08-14,In Stock
+I044,School Bag,Accessories,General Supplier B,4127.09,6759.27,47,24,33,Warehouse A,2026-03-01,In Stock
+I045,Monitor,Electronics,Tech Supplier A,8507.17,13762.48,79,27,85,Warehouse B,2026-04-11,In Stock
+I046,USB Cable,Electronics,Tech Supplier C,6125.56,8796.69,85,44,62,Warehouse A,2026-08-12,In Stock
+I047,Whiteboard Marker,Stationery,Paper Supplier C,1890.25,2529.53,65,48,41,Warehouse B,2026-01-31,In Stock
+I048,Desk,Furniture,Furniture Supplier B,1464.17,2460.52,181,49,89,Warehouse C,2026-09-19,In Stock
+I049,Stapler,Stationery,Paper Supplier B,7028.61,10380.93,45,26,17,Warehouse B,2026-08-14,In Stock
+I050,Storage Box,Storage,General Supplier A,3830.61,4577.17,155,26,95,Warehouse C,2026-03-28,In Stock
+I051,Laptop Stand,Accessories,Office Supplier A,8263.55,13078.13,36,40,68,Warehouse C,2026-03-14,Low Stock
+I052,School Bag,Accessories,General Supplier B,5454.12,7948.65,46,21,58,Warehouse C,2026-07-02,In Stock
+I053,Water Bottle,Accessories,General Supplier A,5868.1,6794.53,51,40,43,Warehouse B,2026-04-07,In Stock
+I054,Laptop Stand,Accessories,Office Supplier A,5812.25,9152.45,78,20,26,Warehouse C,2026-08-25,In Stock
+I055,Stapler,Stationery,Paper Supplier B,5972.19,10149.56,241,18,100,Warehouse C,2026-05-29,In Stock
+I056,Notebook,Stationery,Paper Supplier A,804.04,1198.05,4,13,44,Warehouse A,2026-02-07,Low Stock
+I057,Bookshelf,Furniture,Furniture Supplier A,4982.73,8609.25,76,43,6,Warehouse B,2026-02-20,In Stock
+I058,USB Cable,Electronics,Tech Supplier C,1182.33,1474.48,41,42,37,Warehouse A,2026-06-26,Low Stock
+I059,USB Cable,Electronics,Tech Supplier C,6522.75,10260.89,101,28,98,Warehouse A,2026-06-16,In Stock
+I060,Printer Paper,Stationery,Paper Supplier A,3011.81,5132.22,222,48,60,Warehouse B,2026-09-25,In Stock
+I061,School Bag,Accessories,General Supplier B,5143.11,8109.23,225,20,33,Warehouse C,2026-05-04,In Stock
+I062,Ball Pen Pack,Stationery,Paper Supplier B,6825.02,10595.58,38,48,83,Warehouse B,2026-04-07,Low Stock
+I063,Whiteboard Marker,Stationery,Paper Supplier C,2737.8,3916.85,116,20,36,Warehouse B,2026-04-30,In Stock
+I064,File Folder,Stationery,Paper Supplier C,7765.57,10528.83,169,27,59,Warehouse C,2026-07-12,In Stock
+I065,Ball Pen Pack,Stationery,Paper Supplier B,5215.63,6129.28,145,44,93,Warehouse B,2026-10-01,In Stock
+I066,Desk,Furniture,Furniture Supplier B,6370.93,7631.49,151,40,53,Warehouse C,2026-08-26,In Stock
+I067,Whiteboard Marker,Stationery,Paper Supplier C,6602.89,7596.84,196,45,3,Warehouse C,2026-01-26,In Stock
+I068,Water Bottle,Accessories,General Supplier A,11320.75,13612.57,72,35,35,Warehouse A,2026-03-23,In Stock
+I069,Calculator,Electronics,Tech Supplier B,7241.9,10468.94,100,21,87,Warehouse A,2026-03-07,In Stock
+I070,Headphones,Electronics,Tech Supplier A,7897.28,10703.63,154,44,35,Warehouse B,2026-05-21,In Stock
+I071,Monitor,Electronics,Tech Supplier A,331.16,473.27,101,35,5,Warehouse C,2026-02-18,In Stock
+I072,Calculator,Electronics,Tech Supplier B,1415.7,2203.57,129,39,81,Warehouse B,2026-03-29,In Stock
+I073,USB Cable,Electronics,Tech Supplier C,4092.32,5412.32,243,20,77,Warehouse B,2026-03-06,In Stock
+I074,Monitor,Electronics,Tech Supplier A,1853.93,2877.9,145,14,8,Warehouse B,2026-01-24,In Stock
+I075,Office Chair,Furniture,Furniture Supplier A,6580.87,10368.35,55,26,13,Warehouse C,2026-07-15,In Stock
+I076,Desk Lamp,Electronics,Tech Supplier C,10427.57,13236.4,11,12,72,Warehouse B,2026-03-02,Low Stock
+I077,Calculator,Electronics,Tech Supplier B,6710.38,11097.63,22,14,9,Warehouse B,2026-07-12,In Stock
+I078,Office Chair,Furniture,Furniture Supplier A,3929.08,6866.77,210,33,79,Warehouse A,2026-03-26,In Stock
+I079,School Bag,Accessories,General Supplier B,10128.78,13010.74,226,44,63,Warehouse B,2026-04-27,In Stock
+I080,Stapler,Stationery,Paper Supplier B,6280.23,9847.35,211,11,7,Warehouse B,2026-09-23,In Stock
+I081,Printer Paper,Stationery,Paper Supplier A,7495.2,12751.48,37,13,58,Warehouse C,2026-02-27,In Stock
+I082,Storage Box,Storage,General Supplier A,4722.82,7569.15,149,33,10,Warehouse B,2026-06-25,In Stock
+I083,Desk Lamp,Electronics,Tech Supplier C,9540.87,16229.52,169,45,77,Warehouse C,2026-06-30,In Stock
+I084,Monitor,Electronics,Tech Supplier A,4630.91,5330.5,12,19,46,Warehouse A,2026-05-08,Low Stock
+I085,Monitor,Electronics,Tech Supplier A,5996.93,8178.13,190,22,86,Warehouse C,2026-04-07,In Stock
+I086,Desk,Furniture,Furniture Supplier B,252.07,331.88,225,26,85,Warehouse B,2026-05-28,In Stock
+I087,Desk Lamp,Electronics,Tech Supplier C,8545.9,10305.26,53,30,25,Warehouse C,2026-08-05,In Stock
+I088,Stapler,Stationery,Paper Supplier B,3829.69,4730.01,180,26,69,Warehouse C,2026-05-03,In Stock
+I089,Storage Box,Storage,General Supplier A,5576.89,7415.04,16,12,66,Warehouse B,2026-09-21,In Stock
+I090,Desk,Furniture,Furniture Supplier B,7164.61,12307.57,64,26,45,Warehouse B,2026-01-05,In Stock
+I091,Headphones,Electronics,Tech Supplier A,9864.09,16819.4,144,23,56,Warehouse B,2026-02-07,In Stock
+I092,Desk Lamp,Electronics,Tech Supplier C,9952.82,13856.85,78,30,47,Warehouse A,2026-07-21,In Stock
+I093,Keyboard,Electronics,Tech Supplier B,8423.55,12634.49,0,15,76,Warehouse B,2026-04-22,Out of Stock
+I094,School Bag,Accessories,General Supplier B,5117.99,7765.91,233,40,55,Warehouse C,2026-04-02,In Stock
+I095,Monitor,Electronics,Tech Supplier A,7288.82,11090.24,211,13,29,Warehouse A,2026-07-16,In Stock
+I096,USB Cable,Electronics,Tech Supplier C,5218.46,6865.49,132,41,86,Warehouse A,2026-02-18,In Stock
+I097,Storage Box,Storage,General Supplier A,7778.89,12127.67,109,32,53,Warehouse A,2026-09-19,In Stock
+I098,File Folder,Stationery,Paper Supplier C,3062.57,5018.15,47,11,93,Warehouse B,2026-02-20,In Stock
+I099,Desk,Furniture,Furniture Supplier B,4842.41,7348.29,130,19,82,Warehouse C,2026-04-12,In Stock
+I100,Office Chair,Furniture,Furniture Supplier A,7710.34,11831.36,165,50,54,Warehouse A,2026-08-14,In Stock
+I101,Stapler,Stationery,Paper Supplier B,8785.81,15130.32,143,42,70,Warehouse C,2026-05-27,In Stock
+I102,Ball Pen Pack,Stationery,Paper Supplier B,5580.0,7965.86,118,12,88,Warehouse B,2026-06-07,In Stock
+I103,Notebook,Stationery,Paper Supplier A,10042.91,12183.8,65,42,52,Warehouse A,2026-06-15,In Stock
+I104,Wireless Mouse,Electronics,Tech Supplier A,9810.26,11560.38,173,40,0,Warehouse B,2026-01-16,In Stock
+I105,Office Chair,Furniture,Furniture Supplier A,3443.29,4437.47,35,33,12,Warehouse C,2026-05-06,In Stock
+I106,Wireless Mouse,Electronics,Tech Supplier A,4583.44,6007.57,214,25,83,Warehouse C,2026-06-25,In Stock
+I107,File Folder,Stationery,Paper Supplier C,4538.08,6097.36,36,29,63,Warehouse B,2026-09-30,In Stock
+I108,Whiteboard Marker,Stationery,Paper Supplier C,10278.18,16248.78,49,25,44,Warehouse C,2026-05-26,In Stock
+I109,File Folder,Stationery,Paper Supplier C,6061.17,10497.47,167,26,68,Warehouse B,2026-05-20,In Stock
+I110,Printer Paper,Stationery,Paper Supplier A,820.44,1329.34,47,23,45,Warehouse B,2026-01-25,In Stock
+I111,Calculator,Electronics,Tech Supplier B,8939.3,15580.48,28,23,1,Warehouse B,2026-01-28,In Stock
+I112,Water Bottle,Accessories,General Supplier A,10667.66,15199.19,96,21,60,Warehouse B,2026-06-01,In Stock
+I113,Stapler,Stationery,Paper Supplier B,5889.13,9466.49,35,19,89,Warehouse C,2026-03-11,In Stock
+I114,Laptop Stand,Accessories,Office Supplier A,8168.43,9443.88,61,49,58,Warehouse C,2026-07-12,In Stock
+I115,File Folder,Stationery,Paper Supplier C,6396.7,10063.22,144,15,44,Warehouse A,2026-09-09,In Stock
+I116,Calculator,Electronics,Tech Supplier B,7818.05,13028.45,19,32,95,Warehouse C,2026-06-05,Low Stock
+I117,Calculator,Electronics,Tech Supplier B,3386.68,4723.36,246,25,44,Warehouse C,2026-05-26,In Stock
+I118,Keyboard,Electronics,Tech Supplier B,9705.92,11445.54,244,35,82,Warehouse C,2026-09-24,In Stock
+I119,Bookshelf,Furniture,Furniture Supplier A,11210.25,15721.08,51,21,28,Warehouse A,2026-08-15,In Stock
+I120,Printer Paper,Stationery,Paper Supplier A,5621.92,6795.39,227,24,5,Warehouse C,2026-05-02,In Stock
+I121,Notebook,Stationery,Paper Supplier A,9183.67,11303.68,158,34,60,Warehouse A,2026-06-06,In Stock
+I122,Stapler,Stationery,Paper Supplier B,6221.13,8173.08,65,11,65,Warehouse A,2026-02-01,In Stock
+I123,Water Bottle,Accessories,General Supplier A,9917.96,14499.41,138,50,3,Warehouse C,2026-09-11,In Stock
+I124,Water Bottle,Accessories,General Supplier A,4348.73,6891.54,250,50,75,Warehouse A,2026-02-17,In Stock
+I125,Storage Box,Storage,General Supplier A,1586.29,2642.54,136,44,22,Warehouse B,2026-08-14,In Stock
+I126,USB Cable,Electronics,Tech Supplier C,8712.1,13114.65,36,23,49,Warehouse C,2026-05-02,In Stock
+I127,Notebook,Stationery,Paper Supplier A,4645.3,6330.63,98,10,90,Warehouse C,2026-02-06,In Stock
+I128,Storage Box,Storage,General Supplier A,1141.77,1429.48,133,17,56,Warehouse B,2026-01-15,In Stock
+I129,Desk Lamp,Electronics,Tech Supplier C,2386.18,3572.91,162,34,100,Warehouse C,2026-03-12,In Stock
+I130,Desk Lamp,Electronics,Tech Supplier C,5396.75,8531.09,151,26,52,Warehouse A,2026-01-21,In Stock
+I131,Wireless Mouse,Electronics,Tech Supplier A,5532.88,9166.29,89,32,32,Warehouse A,2026-07-29,In Stock
+I132,USB Cable,Electronics,Tech Supplier C,6609.26,10660.38,75,10,23,Warehouse C,2026-05-18,In Stock
+I133,Storage Box,Storage,General Supplier A,5222.32,7323.63,240,13,43,Warehouse B,2026-03-11,In Stock
+I134,Desk,Furniture,Furniture Supplier B,10722.83,15009.46,69,46,0,Warehouse C,2026-01-01,In Stock
+I135,Headphones,Electronics,Tech Supplier A,3582.23,5653.83,211,38,61,Warehouse C,2026-07-14,In Stock
+I136,Monitor,Electronics,Tech Supplier A,8386.04,12535.82,62,48,90,Warehouse A,2026-04-18,In Stock
+I137,Water Bottle,Accessories,General Supplier A,11196.71,13104.2,23,39,58,Warehouse B,2026-08-21,Low Stock
+I138,Calculator,Electronics,Tech Supplier B,11876.83,20531.09,237,49,34,Warehouse A,2026-08-05,In Stock
+I139,Ball Pen Pack,Stationery,Paper Supplier B,9881.83,13026.9,5,26,82,Warehouse C,2026-01-09,Low Stock
+I140,Bookshelf,Furniture,Furniture Supplier A,251.1,431.69,25,40,78,Warehouse C,2026-03-13,Low Stock
+I141,Office Chair,Furniture,Furniture Supplier A,7853.38,13211.1,61,50,92,Warehouse A,2026-03-03,In Stock
+I142,Ball Pen Pack,Stationery,Paper Supplier B,6391.15,10346.94,6,32,63,Warehouse C,2026-01-19,Low Stock
+I143,Ball Pen Pack,Stationery,Paper Supplier B,9611.34,13549.27,248,38,1,Warehouse C,2026-09-05,In Stock
+I144,Monitor,Electronics,Tech Supplier A,7652.06,9510.28,46,10,52,Warehouse A,2026-03-08,In Stock
+I145,Notebook,Stationery,Paper Supplier A,4441.97,5988.56,54,31,58,Warehouse B,2026-09-16,In Stock
+I146,School Bag,Accessories,General Supplier B,2214.39,2960.29,221,37,96,Warehouse B,2026-02-10,In Stock
+I147,Stapler,Stationery,Paper Supplier B,5550.08,7081.81,101,11,2,Warehouse C,2026-09-11,In Stock
+I148,Whiteboard Marker,Stationery,Paper Supplier C,8832.84,12029.83,240,18,5,Warehouse A,2026-05-04,In Stock
+I149,Desk,Furniture,Furniture Supplier B,7842.38,13008.87,48,18,49,Warehouse C,2026-05-14,In Stock
+I150,Whiteboard Marker,Stationery,Paper Supplier C,5169.97,5975.88,65,31,8,Warehouse C,2026-02-10,In Stock
+I151,Laptop Stand,Accessories,Office Supplier A,169.35,213.18,119,25,12,Warehouse B,2026-06-07,In Stock
+I152,Laptop Stand,Accessories,Office Supplier A,9340.84,13907.63,42,41,52,Warehouse B,2026-06-17,In Stock
+I153,Ball Pen Pack,Stationery,Paper Supplier B,665.3,776.23,113,13,50,Warehouse C,2026-06-03,In Stock
+I154,Desk Lamp,Electronics,Tech Supplier C,1718.14,2131.12,180,42,92,Warehouse A,2026-01-10,In Stock
+I155,Office Chair,Furniture,Furniture Supplier A,8433.48,11430.04,211,47,30,Warehouse A,2026-04-02,In Stock
+I156,Whiteboard Marker,Stationery,Paper Supplier C,10049.76,16640.43,19,18,88,Warehouse B,2026-08-02,In Stock
+I157,Monitor,Electronics,Tech Supplier A,9303.63,16008.64,198,22,45,Warehouse A,2026-01-11,In Stock
+I158,Whiteboard Marker,Stationery,Paper Supplier C,8012.72,13496.09,94,40,1,Warehouse B,2026-04-24,In Stock
+I159,Laptop Stand,Accessories,Office Supplier A,884.57,1418.35,145,46,0,Warehouse B,2026-08-12,In Stock
+I160,Keyboard,Electronics,Tech Supplier B,2054.12,3280.62,236,44,17,Warehouse C,2026-09-05,In Stock
+I161,Ball Pen Pack,Stationery,Paper Supplier B,5120.36,7999.47,80,30,75,Warehouse A,2026-08-10,In Stock
+I162,Calculator,Electronics,Tech Supplier B,5678.87,9077.2,236,37,23,Warehouse A,2026-03-15,In Stock
+I163,School Bag,Accessories,General Supplier B,10226.26,16594.79,210,50,31,Warehouse B,2026-02-12,In Stock
+I164,Stapler,Stationery,Paper Supplier B,8351.5,12339.88,243,47,99,Warehouse C,2026-03-24,In Stock
+I165,Whiteboard Marker,Stationery,Paper Supplier C,3365.97,5512.99,208,26,63,Warehouse C,2026-07-19,In Stock
+I166,Desk,Furniture,Furniture Supplier B,3595.67,4998.67,214,21,28,Warehouse C,2026-07-08,In Stock
+I167,Office Chair,Furniture,Furniture Supplier A,826.95,1035.31,245,17,63,Warehouse A,2026-06-23,In Stock
+I168,Storage Box,Storage,General Supplier A,1799.34,2545.09,200,37,14,Warehouse B,2026-01-05,In Stock
+I169,Headphones,Electronics,Tech Supplier A,205.04,324.11,231,13,57,Warehouse C,2026-07-26,In Stock
+I170,Office Chair,Furniture,Furniture Supplier A,5985.22,7301.76,128,15,77,Warehouse A,2026-09-14,In Stock
+I171,Whiteboard Marker,Stationery,Paper Supplier C,1537.28,2476.46,48,42,42,Warehouse C,2026-04-12,In Stock
+I172,Storage Box,Storage,General Supplier A,2067.98,2407.93,122,11,15,Warehouse A,2026-02-07,In Stock
+I173,Desk,Furniture,Furniture Supplier B,1939.62,2778.48,117,48,10,Warehouse A,2026-01-16,In Stock
+I174,Desk,Furniture,Furniture Supplier B,3327.23,4516.78,240,21,42,Warehouse A,2026-04-13,In Stock
+I175,Laptop Stand,Accessories,Office Supplier A,756.42,1163.88,28,43,83,Warehouse C,2026-07-26,Low Stock
+I176,Office Chair,Furniture,Furniture Supplier A,3776.15,5838.85,101,23,0,Warehouse C,2026-03-17,In Stock
+I177,Headphones,Electronics,Tech Supplier A,1754.44,2464.51,249,37,10,Warehouse C,2026-01-08,In Stock
+I178,Bookshelf,Furniture,Furniture Supplier A,3089.79,4169.78,238,34,19,Warehouse B,2026-06-27,In Stock
+I179,Desk Lamp,Electronics,Tech Supplier C,77.11,101.93,221,12,34,Warehouse B,2026-04-05,In Stock
+I180,Headphones,Electronics,Tech Supplier A,11682.2,16085.33,22,24,54,Warehouse C,2026-08-01,Low Stock
+I181,Ball Pen Pack,Stationery,Paper Supplier B,7196.78,8927.93,188,39,75,Warehouse C,2026-08-09,In Stock
+I182,Notebook,Stationery,Paper Supplier A,8916.46,12099.43,90,41,9,Warehouse C,2026-01-16,In Stock
+I183,Stapler,Stationery,Paper Supplier B,1486.1,1958.42,121,46,87,Warehouse C,2026-04-09,In Stock
+I184,Office Chair,Furniture,Furniture Supplier A,7769.12,10406.07,242,47,37,Warehouse C,2026-09-09,In Stock
+I185,Notebook,Stationery,Paper Supplier A,2462.87,4246.82,86,14,34,Warehouse B,2026-09-04,In Stock
+I186,Monitor,Electronics,Tech Supplier A,746.75,1186.72,159,29,19,Warehouse C,2026-09-05,In Stock
+I187,Calculator,Electronics,Tech Supplier B,6705.06,9191.99,69,33,9,Warehouse C,2026-07-16,In Stock
+I188,School Bag,Accessories,General Supplier B,8602.65,12484.25,117,43,70,Warehouse C,2026-02-08,In Stock
+I189,Office Chair,Furniture,Furniture Supplier A,10364.64,14265.06,118,28,53,Warehouse B,2026-08-19,In Stock
+I190,Keyboard,Electronics,Tech Supplier B,1592.58,2512.0,122,31,94,Warehouse C,2026-01-09,In Stock
+I191,Storage Box,Storage,General Supplier A,520.95,834.02,241,21,6,Warehouse A,2026-04-25,In Stock
+I192,USB Cable,Electronics,Tech Supplier C,7616.27,8908.78,11,34,78,Warehouse B,2026-05-07,Low Stock
+I193,Office Chair,Furniture,Furniture Supplier A,2236.84,3356.43,15,24,81,Warehouse A,2026-07-26,Low Stock
+I194,Printer Paper,Stationery,Paper Supplier A,3002.63,5185.36,149,31,44,Warehouse B,2026-08-18,In Stock
+I195,Calculator,Electronics,Tech Supplier B,4855.2,6317.36,127,25,95,Warehouse B,2026-06-18,In Stock
+I196,Printer Paper,Stationery,Paper Supplier A,2060.89,2643.35,56,14,39,Warehouse B,2026-06-12,In Stock
+I197,Desk Lamp,Electronics,Tech Supplier C,10403.47,13788.81,67,42,92,Warehouse C,2026-01-30,In Stock
+I198,Desk,Furniture,Furniture Supplier B,5417.29,6532.54,205,25,78,Warehouse B,2026-08-24,In Stock
+I199,Stapler,Stationery,Paper Supplier B,146.6,172.39,217,45,34,Warehouse C,2026-04-05,In Stock
+I200,Wireless Mouse,Electronics,Tech Supplier A,1344.49,1889.43,230,38,62,Warehouse A,2026-09-18,In Stock
