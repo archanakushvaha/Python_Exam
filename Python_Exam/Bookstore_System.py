@@ -12,71 +12,32 @@ class Inventory:
         self.file_path = "inventory.csv"
         self.sales_path = "sales.csv"
 
-    def load_data(self, file_path="inventory.csv"):
-
+    def load_data(self):
         try:
-            self.books = pd.read_csv(file_path)
-            self.file_path = file_path
-            required_columns = ["title", "author", "genre", "price", "quantity"]
-
-            if not all(col in self.books.columns for col in required_columns):
-                print("Invalid inventory CSV columns!")
-                self.books = None
-                return
-
+            self.sales = pd.read_csv(self.sales_path)
             required_sales_columns = ["date", "title", "quantity_sold", "total_revenue"]
+            if not all(col in self.sales.columnsfor col in required_sales_column):
+            print("Invalid sales CSV columns!")
+            self.sales = None
+            return
             
-            if not all(col in self.sales.columns
-                       for col in required_sales_columns):
-                       print("Invalid sales CSV columns!")
-                       self.sales = None
-                       return
+            self.sales["date"] = pd.to_datetime(self.sales["date"], errors="coerce")
+            self.sales["quantity_sold"] = pd.to_numeric(self.sales["quantity_sold"], errors="coerce")
+            self.sales["total_revenue"] = pd.to_numeric(self.sales["total_revenue"], errors="coerce")
             
             if (
-                self.books["title"].isna().any()
-                or self.books["author"].isna().any()
-                or self.books["genre"].isna().any()
-                or self.books["price"].isna().any()
-                or self.books["quantity"].isna().any()
-                or (self.books["price"] < 0).any()
-                or (self.books["quantity"] < 0).any()
-                or (self.books["quantity"] % 1 != 0).any()
+                self.sales["date"].isna().any()
+                or self.sales["quantity_sold"].isna().any()
+                or self.sales["total_revenue"].isna().any()
+                or (self.sales["quantity_sold"] < 0).any()
+                or (self.sales["quantity_sold"] % 1 != 0).any()
+                or (self.sales["total_revenue"] < 0).any()
             ):
-                print("Invalid data in inventory CSV!")
-                self.books = None
-                return
-
-            self.books["quantity"] = self.books["quantity"].astype(int)
-
-            try:
-                self.sales = pd.read_csv(self.sales_path)
-
-                self.sales["date"] = pd.to_datetime(self.sales["date"], errors="coerce")
-                self.sales["quantity_sold"] = pd.to_numeric(self.sales["quantity_sold"], errors="coerce")
-                self.sales["total_revenue"] = pd.to_numeric(self.sales["total_revenue"], errors="coerce")
-
-                if (
-                    self.sales["date"].isna().any()
-                    or self.sales["quantity_sold"].isna().any()
-                    or self.sales["total_revenue"].isna().any()
-                    or (self.sales["quantity_sold"] < 0).any()
-                    or (self.sales["total_revenue"] < 0).any()
-                ):
-                    self.sales = None
-                    print("Warning: Invalid sales data.")
-
-            except FileNotFoundError:
                 self.sales = None
-                print("Sales CSV not found. Inventory loaded only.")
-
-            print("Inventory loaded successfully!")
-
+                print("Warning: Invalid sales data!")
         except FileNotFoundError:
-            print("File not found!")
-
-        except (pd.errors.ParserError, UnicodeDecodeError):
-            print("Unable to read CSV file!")
-
+            self.sales = None
+            print("Sales CSV not found. Inventory loaded only.")
 
     def save_inventory(self):
         self.books.to_csv(self.file_path, index=False)
