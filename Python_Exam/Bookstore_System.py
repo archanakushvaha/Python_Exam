@@ -1,51 +1,126 @@
+# Project : Bookstore Management System
+
+from abc import ABC, abstractmethod
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+class Report(ABC):
+    @abstractmethod
+    def generate(self, books, sales):
+        pass
 
-class Inventory:
+class InventoryReport(Report):
+    def generate(self, books, sales):
+
+        if books is None or books.empty:
+            print("No book data available.")
+            return
+
+        prices = books["price"].to_numpy()
+        quantities = books["quantity"].to_numpy()
+        print("Total Book Titles:", len(books))
+        print("Total Copies:", np.sum(quantities))
+        print("Average Price:", round(np.mean(prices), 2))
+        print("Inventory Value:", round(np.sum(prices * quantities), 2))
+
+
+class SalesReport(Report):
+
+    def generate(self, books, sales):
+        if sales is None or sales.empty:
+            print("\nNo sales data available.")
+            return
+
+        print("Total Books Sold:",int(sales["quantity_sold"].sum()))
+        print("Total Revenue:",round(float(sales["total_revenue"].sum()), 2))
+        best = sales.groupby("title")["quantity_sold"].sum()
+        if not best.empty:
+            print("Best-Selling Book:", best.idxmax())
+
+class Bookstore:
 
     def __init__(self):
-        self.books = None
-        self.sales = None
-        self.file_path = "inventory.csv"
-        self.sales_path = "sales.csv"
+        self.__books = None
+        self.__sales = None
+
+        self.inventory_file = "inventory.csv"
+        self.sales_file = "sales.csv"
 
     def load_data(self):
+
         try:
-            self.sales = pd.read_csv(self.sales_path)
-            required_sales_columns = ["date", "title", "quantity_sold", "total_revenue"]
-            if not all(col in self.sales.columnsfor col in required_sales_column):
-            print("Invalid sales CSV columns!")
-            self.sales = None
-            return
-            
-            self.sales["date"] = pd.to_datetime(self.sales["date"], errors="coerce")
-            self.sales["quantity_sold"] = pd.to_numeric(self.sales["quantity_sold"], errors="coerce")
-            self.sales["total_revenue"] = pd.to_numeric(self.sales["total_revenue"], errors="coerce")
-            
+            books = pd.read_csv(self.inventory_file)
+            required = ["title", "author", "genre", "price", "quantity"]
+
+            if not all(col in books.columns for col in required):
+                print("Invalid inventory CSV columns!")
+                return
+
+            books["price"] = pd.to_numeric(books["price"], errors="coerce")
+            books["quantity"] = pd.to_numeric(books["quantity"], errors="coerce")
+
             if (
-                self.sales["date"].isna().any()
-                or self.sales["quantity_sold"].isna().any()
-                or self.sales["total_revenue"].isna().any()
-                or (self.sales["quantity_sold"] < 0).any()
-                or (self.sales["quantity_sold"] % 1 != 0).any()
-                or (self.sales["total_revenue"] < 0).any()
+                books[required].isna().any().any()
+                or (books[["price", "quantity"]] < 0).any().any()
+                or (books["quantity"] % 1 != 0).any()
             ):
-                self.sales = None
-                print("Warning: Invalid sales data!")
+                print("Invalid data in inventory.csv!")
+                return
+
+            books["quantity"] = books["quantity"].astype(int)
+            self.__books = books
+
         except FileNotFoundError:
-            self.sales = None
-            print("Sales CSV not found. Inventory loaded only.")
+            print("inventory.csv not found!")
+            return
+
+        except (pd.errors.ParserError, UnicodeDecodeError):
+            print("Unable to read inventory.csv!")
+            return
+
+        try:
+            sales = pd.read_csv(self.sales_file)
+            required_sales = ["date", "title", "quantity_sold", "total_revenue"]
+
+            if not all(col in sales.columns for col in required_sales):
+                print("Invalid sales CSV columns. Sales report unavailable.")
+
+                self.__sales = pd.DataFrame(columns=required_sales)
+                self.__sales["date"] = pd.to_datetime(self.__sales["date"])
+
+            else:
+                sales["date"] = pd.to_datetime(sales["date"], errors="coerce")
+                for col in ["quantity_sold", "total_revenue"]:
+                    sales[col] = pd.to_numeric(
+                        sales[col], errors="coerce"
+                    )
+
+                if (
+                    sales[required_sales].isna().any().any()or (sales[["quantity_sold", "total_revenue"]] < 0).any().any()
+                    or (sales["quantity_sold"] % 1 != 0).any()
+                ):
+                    print("Invalid sales data. Sales report unavailable.")
+                    self.__sales = pd.DataFrame(columns=required_sales)
+                    self.__sales["date"] = pd.to_datetime(self.__sales["date"])
+
+                else:
+                    self.__sales = sales
+
+        except FileNotFoundError:
+            self.__sales = pd.DataFrame(columns=["date", "title","quantity_sold", "total_revenue"])
+            self.__sales["date"] = pd.to_datetime(self.__sales["date"])
+            print("sales.csv not found. Inventory loaded only.")
+        print("Bookstore data loaded successfully!")
 
     def save_inventory(self):
-        self.books.to_csv(self.file_path, index=False)
+        self.__books.to_csv(self.inventory_file)
 
     def add_book(self):
 
-        if self.books is None:
-            print("Please load inventory first!")
+        if self.__books is None:
+            print("Please load data first!")
             return
 
         try:
@@ -57,152 +132,138 @@ class Inventory:
                 print("Title, author and genre cannot be empty!")
                 return
 
-            if self.books["title"].str.casefold().eq(title.casefold()).any():
+            if self.__books["title"].str.casefold().eq(title.casefold()).any():
                 print("Book already exists!")
                 return
 
-            price = float(input("Enter book price: "))
-            quantity = int(input("Enter book quantity: "))
+            price = float(input("Enter price: "))
+            quantity = int(input("Enter quantity: "))
 
-            if not np.isfinite(price) or price <= 0:
-                print("Price must be positive!")
+            if not np.isfinite(price) or price <= 0 or quantity < 0:
+                print("Price must be positive and quantity cannot be negative!")
                 return
 
-            if quantity <= 0:
-                print("Quantity must be positive!")
-                return
-
-            new_book = pd.DataFrame([{
-                "title": title,
-                "author": author,
-                "genre": genre,
-                "price": price,
-                "quantity": quantity
-            }])
-
-            self.books = pd.concat([self.books, new_book], ignore_index=True)
+            new_book = pd.DataFrame([{"title": title,"author": author,"genre": genre,"price": price,"quantity": quantity}])
+            self.__books = pd.concat([self.__books, new_book],ignore_index=True)
             self.save_inventory()
             print("Book added successfully!")
 
         except ValueError:
             print("Enter valid numeric values!")
 
-
-
     def display_books(self):
 
-        if self.books is None:
-            print("Please load inventory first!")
-            return
-
-        if self.books.empty:
-            print("No books available!")
+        if self.__books is None:
+            print("Please load data first!")
+        elif self.__books.empty:
+            print("No books found.")
         else:
-            print(self.books.to_string(index=False))
-
+            print(self.__books.to_string(index=False))
 
     def update_book(self):
 
-        if self.books is None:
-            print("Please load inventory first!")
+        if self.__books is None:
+            print("Please load data first!")
             return
 
-        title = input("Enter current book title: ").strip()
-        matches = self.books.index[self.books["title"].str.casefold() == title.casefold()].tolist()
-
-        if not matches:
-            print("Book not found!")
+        title = input("Enter book title to update: ").strip()
+        rows = self.__books.index[self.__books["title"].str.casefold()== title.casefold()]
+        if len(rows) == 0:
+            print("Book not found.")
             return
-
         try:
-            index = matches[0]
-            new_title = input("Enter new title: ").strip()
-            quantity_input = input("Enter new quantity: ").strip()
-            price_input = input("Enter new price: ").strip()
-
-            if new_title:
-                duplicate = self.books[self.books["title"].str.casefold()== new_title.casefold()]
-                if not duplicate.empty and duplicate.index[0] != index:
-                    print("Another book already has this title!")
-                    return
-
-            if quantity_input:
-                quantity = int(quantity_input)
-
-                if quantity < 0:
-                    print("Quantity cannot be negative!")
-                    return
-            else:
-                quantity = int(self.books.at[index, "quantity"])
-
-            if price_input:
-                price = float(price_input)
-
+            i = rows[0]
+            price_text = input("New price (Enter to keep current): ").strip()
+            qty_text = input("New quantity (Enter to keep current): ").strip()
+            if price_text:
+                price = float(price_text)
                 if not np.isfinite(price) or price <= 0:
                     print("Price must be positive!")
                     return
-            else:
-                price = float(self.books.at[index, "price"])
 
-            if new_title:
-                self.books.at[index, "title"] = new_title
+                self.__books.at[i, "price"] = price
 
-            self.books.at[index, "quantity"] = quantity
-            self.books.at[index, "price"] = price
+            if qty_text:
+                qty = int(qty_text)
+                if qty < 0:
+                    print("Quantity cannot be negative!")
+                    return
+                self.__books.at[i, "quantity"] = qty
+
             self.save_inventory()
             print("Book updated successfully!")
-
         except ValueError:
             print("Enter valid numeric values!")
 
-    def remove_book(self):
+    def delete_book(self):
 
-        if self.books is None:
-            print("Please load inventory first!")
-            return
-
-        title = input("Enter book title to remove: ").strip()
-        matches = self.books.index[self.books["title"].str.casefold() == title.casefold()].tolist()
-
-        if not matches:
-            print("Book not found!")
-            return
-
-        self.books = self.books.drop(index=matches[0]).reset_index(drop=True)
-        self.save_inventory()
-        print("Book removed successfully!")
-
-    def analysis(self):
-        if self.books is None:
+        if self.__books is None:
             print("Please load data first!")
             return
-        
-        price = self.books["price"].to_numpy()
-        qty = self.books["quantity"].to_numpy()
 
-        print("\n--- Inventory Analysis ---")
-        print("Total Books:", len(self.books))
-        print("Total Copies:", np.sum(qty))
-        print("Average Price:", np.mean(price))
-        print("Inventory Value:", np.sum(price * qty))
-
-        if self.sales is None or self.sales.empty:
-            print("No sales data available!")
+        title = input("Enter book title to delete: ").strip()
+        rows = self.__books.index[self.__books["title"].str.casefold()== title.casefold()]
+        if len(rows) == 0:
+            print("Book not found.")
             return
 
-        print("Total Sold:", self.sales["quantity_sold"].sum())
-        print("Total Revenue:", self.sales["total_revenue"].sum())
-        best = self.sales.groupby("title")["quantity_sold"].sum()
-        print("Best Selling Book:", best.idxmax())
+        self.__books = self.__books.drop(index=rows[0]).reset_index(drop=True)
+        self.save_inventory()
+        print("Book deleted successfully!")
+
+    def analysis(self):
+
+        if self.__books is None:
+            print("Please load data first!")
+            return
+
+        reports = [InventoryReport(),SalesReport()]
+        for report in reports:
+            report.generate(self.__books,self.__sales)
+
+    def generate_report(self):
+
+        if self.__books is None:
+            print("Please load data first!")
+            return
+
+        print("\n1. Save Inventory Report")
+        print("2. Save Sales Report")
+
+        try:
+            choice = int(input("Enter choice: "))
+            if choice == 1:
+                self.__books.to_csv("inventory_report.csv",)
+                print("Inventory report saved to inventory_report.csv")
+
+            elif choice == 2:
+                if self.__sales is None or self.__sales.empty:
+                    print("No sales data available!")
+                    return
+
+                report = self.__sales.groupby("title").agg(quantity_sold=("quantity_sold", "sum"),total_revenue=("total_revenue", "sum"))
+                report.to_csv("sales_report.csv",index=False)
+                print("Sales report saved to sales_report.csv")
+
+            else:
+                print("Invalid choice!")
+
+        except ValueError:
+            print("Enter a valid menu number!")
 
     def visualization(self):
 
-        if self.books is None:
-            print("Please load inventory first!")
+        if self.__books is None:
+            print("Please load data first!")
             return
 
-        if self.sales is None or self.sales.empty:
-            print("Please load valid sales data first!")
+        if self.__sales is None or self.__sales.empty:
+            print("No sales data available for charts!")
+            return
+
+        data = self.__sales.merge(self.__books[["title", "genre", "price"]],on="title",how="inner")
+        if data.empty:
+            print("Sales titles do not match inventory titles!")
             return
 
         while True:
@@ -210,144 +271,128 @@ class Inventory:
             print("2. Line Chart")
             print("3. Pie Chart")
             print("4. Heatmap")
-            print("5. Exit")
+            print("5. Back")
 
             try:
-                choice = int(input("Enter your choice: "))
+                choice = int(input("Enter choice: "))
             except ValueError:
-                print("Enter a valid menu number!")
+                print("Enter a valid number!")
                 continue
 
-            data = self.sales.merge(self.books[["title", "author", "genre", "price"]],on="title",how="inner")
-
             if choice == 1:
-                genre_sales = data.groupby("genre")["quantity_sold"].sum().sort_values(ascending=False)
-
-                genre_sales.plot(kind="bar", figsize=(9, 5))
-
-                plt.title("Total Books Sold by Genre")
+                chart = data.groupby("genre")["quantity_sold"].sum()
+                chart.plot(
+                    kind="bar",
+                    figsize=(8, 5)
+                )
+                plt.title("Books Sold by Genre")
                 plt.xlabel("Genre")
-                plt.ylabel("Quantity Sold")
-                plt.xticks(rotation=45, ha="right")
-                plt.tight_layout()
-                plt.show()
+                plt.ylabel("Books Sold")
 
             elif choice == 2:
-                data["month"] = data["date"].dt.to_period("M")
-
-                monthly = data.groupby("month")["total_revenue"].sum()
-                monthly.index = monthly.index.astype(str)
-
-                plt.figure(figsize=(9, 5))
+                monthly = data.assign(month=data["date"].dt.to_period("M").astype(str)).groupby("month")["total_revenue"].sum()
+                plt.figure(figsize=(8, 5))
                 plt.plot(
                     monthly.index,
                     monthly.values,
                     marker="o"
                 )
-
-                plt.title("Monthly Sales Revenue Trend")
+                plt.title("Monthly Sales Revenue")
                 plt.xlabel("Month")
-                plt.ylabel("Total Revenue")
-                plt.xticks(rotation=45)
-                plt.tight_layout()
-                plt.show()
+                plt.ylabel("Revenue")
+                plt.xticks(rotation=30)
 
             elif choice == 3:
-                genre_revenue = data.groupby("genre")["total_revenue"].sum()
-                plt.figure(figsize=(8, 8))
+                chart = data.groupby("genre")["total_revenue"].sum()
+                if chart.sum() <= 0:
+                    print("No revenue available for pie chart.")
+                    continue
+                plt.figure(figsize=(7, 7))
                 plt.pie(
-                    genre_revenue,
-                    labels=genre_revenue.index,
-                    autopct="%1.1f%%",
-                    startangle=90
+                    chart,
+                    labels=chart.index,
+                    autopct="%1.1f%%"
                 )
-
-                plt.title("Revenue Share by Genre")
-                plt.tight_layout()
-                plt.show()
+                plt.title("Revenue by Genre")
 
             elif choice == 4:
-                book_sales = self.sales.groupby("title")["quantity_sold"].sum().rename("total_sold")
-                correlation_data = self.books[
+                sold = self.__sales.groupby("title")["quantity_sold"].sum().rename("total_sold")
+                corr_data = self.__books[
                     ["title", "price"]
                 ].merge(
-                    book_sales,
+                    sold,
                     left_on="title",
                     right_index=True,
                     how="inner"
                 )
-
-                if len(correlation_data) < 2:
-                    print("Not enough book data for a heatmap!")
+                if (len(corr_data) < 2 or corr_data[["price", "total_sold"]].nunique().min() < 2):
+                    print("Not enough varied data for heatmap.")
                     continue
 
-                corr = correlation_data[
-                    ["price", "total_sold"]
-                ].corr()
-
-                plt.figure(figsize=(7, 5))
+                plt.figure(figsize=(6, 4))
                 sns.heatmap(
-                    corr,
+                    corr_data[
+                        ["price", "total_sold"]
+                    ].corr(),
                     annot=True,
                     cmap="coolwarm",
                     vmin=-1,
                     vmax=1
                 )
-
-                plt.title("Correlation: Book Price vs Sales")
-                plt.tight_layout()
-                plt.show()
+                plt.title("Book Price and Sales Correlation")
 
             elif choice == 5:
-                print("Exiting visualization menu...")
                 break
-
             else:
                 print("Invalid choice!")
+                continue
+            plt.tight_layout()
+            plt.show()
 
-book = Inventory()
-
+bookstore = Bookstore()
 while True:
     print("1. Load Data")
     print("2. Add Book")
     print("3. Display Books")
     print("4. Update Book")
-    print("5. Remove Book")
+    print("5. Delete Book")
     print("6. Analysis and Report")
-    print("7. Visualization")
-    print("8. Exit")
+    print("7. Generate CSV Report")
+    print("8. Visualization")
+    print("9. Exit")
 
     try:
         choice = int(input("Enter your choice: "))
     except ValueError:
-        print("Enter a valid menu number!")
+        print("Please enter a number from 1 to 11.")
         continue
 
     if choice == 1:
-        path = input("Enter CSV file: ")
-        book.load_data(path)
+        bookstore.load_data()
 
     elif choice == 2:
-        book.add_book()
+        bookstore.add_book()
 
     elif choice == 3:
-        book.display_books()
+        bookstore.display_books()
 
     elif choice == 4:
-        book.update_book()
+        bookstore.update_book()
 
     elif choice == 5:
-        book.remove_book()
+        bookstore.delete_book()
 
     elif choice == 6:
-        book.analysis()
+        bookstore.analysis()
 
     elif choice == 7:
-        book.visualization()
+        bookstore.generate_report()
 
     elif choice == 8:
-        print("Thank you for using Bookstore Management!")
-        break
+        bookstore.visualization()
 
+    elif choice == 9:
+        print("Thank you for using Bookstore Management System!")
+        break
     else:
-        print("Invalid choice. Please try again.")
+        print("Invalid choice. Please enter a number from 1 to 9.")
